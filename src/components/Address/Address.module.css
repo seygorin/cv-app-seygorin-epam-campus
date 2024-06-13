@@ -1,0 +1,31 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.itemContainer {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+}
+
+.itemContainer:last-child {
+	margin-bottom: 0;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+	justify-content: center;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.icon {
+	color: #049CE4;
+  margin-right: 20px;
+  width: 1.5em;
+}

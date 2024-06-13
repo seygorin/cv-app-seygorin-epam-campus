@@ -1,0 +1,41 @@
+.timeline {
+  display: flex;
+  flex-direction: column;
+}
+
+.timelineItem {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.dateSkeleton {
+  width: 50px;
+  height: 20px;
+  background-color: #e0e0e0;
+  border-radius: 4px;
+  margin-right: 20px;
+}
+
+.contentSkeleton {
+  flex-grow: 1;
+  position: relative;
+  height: 60px;
+  background-color: #e0e0e0;
+  border-radius: 4px;
+}
+
+.titleSkeleton {
+  width: 50%;
+  height: 24px;
+  background-color: #e0e0e0;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.textSkeleton {
+  width: 100%;
+  height: 16px;
+  background-color: #e0e0e0;
+  border-radius: 4px;
+  margin-bottom: 6px;
+}

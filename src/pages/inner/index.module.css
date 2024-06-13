@@ -1,0 +1,15 @@
+.container {
+  display: flex;
+  justify-content: center;
+	flex-direction: column;
+  align-items: center;
+  height: 100vh; 
+  background: url("/assets/background.jpg") no-repeat center center fixed; 
+
+  background-size: cover;
+}
+
+.buttonWow {
+	position: absolute;
+	
+}

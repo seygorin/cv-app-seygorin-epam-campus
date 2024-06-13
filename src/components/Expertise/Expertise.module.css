@@ -1,0 +1,23 @@
+.experience {
+  display: flex;
+  flex-direction: column;
+}
+
+.item {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.item:last-child {
+	margin-bottom: 0;
+}
+.leftColumn {
+	
+  flex-basis: 20%; 
+	margin-right: 30px;
+}
+
+
+.rightColumn {
+  flex-basis: 80% 
+}

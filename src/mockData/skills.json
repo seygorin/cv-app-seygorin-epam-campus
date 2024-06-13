@@ -1,0 +1,42 @@
+[
+  {
+    "id": "9ba0fd21-d063-4f37-9f16-3a4db96d15e5",
+    "name": "HTML",
+    "range": 87
+  },
+  {
+    "id": "3f30c17d-e682-4e5f-afe5-bf3fdbf54992",
+    "name": "CSS",
+    "range": 85
+  },
+  {
+    "id": "6c9a3b05-ddd0-4a0c-bc3f-2be1c4cad0fb",
+    "name": "JavaScript / TypeScript",
+    "range": 80
+  },
+  {
+    "id": "b35bfdad-eb72-4491-9490-9bbb8bbd5aa2",
+    "name": "React",
+    "range": 75
+  },
+  {
+    "id": "a96e3c6e-e6e8-4113-80bf-54a1be555164",
+    "name": "Redux / Toolkit",
+    "range": 65
+  },
+  {
+    "id": "335a44c3-04a6-49bc-8686-538f7268cfb7",
+    "name": "Vue",
+    "range": 30
+  },
+  {
+    "id": "cc5c7006-9891-47bf-8abd-43f9161e795b",
+    "name": "Node.js",
+    "range": 34
+  },
+  {
+    "id": "9967e78e-7598-406a-b048-3b7fa2b7d7d3",
+    "name": "NestJS",
+    "range": 20
+  }
+]

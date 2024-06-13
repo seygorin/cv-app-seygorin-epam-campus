@@ -1,0 +1,35 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.feedbackItem {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.feedbackText {
+  font-size: 16px;
+}
+
+.reporter {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.avatar {
+  border-radius: 50%;
+}
+
+.reporterName {
+  font-size: 14px;
+}
+
+.reporterUrl {
+  font-size: 14px;
+  color: #049ce4;
+  text-decoration: none;
+}

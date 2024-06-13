@@ -1,0 +1,26 @@
+.title {
+  color: #049ce4;
+  font-size: 25px;
+}
+
+.box {
+  padding: 0 20px 0 40px;
+  margin-top: 40px;
+}
+
+.box:last-child {
+  margin-bottom: 40px;
+}
+
+.content {
+  margin-top: 30px;
+}
+
+.highlightedTitle {
+  font-size: 12px;
+  color: transparent;
+}
+
+.highlightedTitle::selection {
+  color: #049ce4;
+}

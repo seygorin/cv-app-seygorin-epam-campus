@@ -1,0 +1,22 @@
+[
+	{
+    "date": 1993,
+    "title": "Some Basic Movments",
+    "text": "Learned how to walk, talk, and interact with the world around me. Learned to be curious and to explore the world around me."
+  },
+  {
+    "date": 1999,
+    "title": "Some Basic School",
+    "text": "Learned to write and read, as well as to count, think logically, and cooperate with people. Learned to be a good person and to reap the benefits of this choice."
+  },
+  {
+    "date": 2010,
+    "title": "Some University",
+    "text": "Studied natural sciences at the Faculty of Geology. In nature, everything is arranged logically and simply, which gave me an understanding of one of the most important principles of programming - KISS. Also obtained a law degree, which helped me understand the importance of following the letter of the law (project requirements)."
+  },
+  {
+    "date": 2015,
+    "title": "Learning. Learning Never Ends",
+    "text": "Over the last ~ ten years, I have completed various courses in the field of geology for professional development and started learning programming. Among my most remarkable achievements are certificates of completion from RS School, EPAM Campus, and others, further enhancing my skills in areas like JavaScript, React (Next.js), and Node.js. My journey into programming has allowed me to work on a variety of projects, ranging from web applications to games, showcasing my ability to adapt and learn new technologies. I am passionate about continuously improving my knowledge and staying up-to-date with the latest industry trends, aiming to apply my expertise in real-world applications."
+  }
+]

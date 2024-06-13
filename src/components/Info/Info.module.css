@@ -1,0 +1,27 @@
+.info {
+  position: relative;
+  background-color: #EEEEEE;
+  padding: 10px;
+  margin: 0 10px 10px 0;
+  border-radius: 5px;
+}
+
+.arrow::before {
+  content: "";
+  position: absolute;
+  top: 20%;
+  left: -10px;
+  border-width: 10px 10px 10px 0;
+  border-style: solid;
+  border-color: transparent #EEEEEE transparent transparent;
+  transform: translateY(-50%);
+}
+
+.info.dark {
+  background-color: #333;
+  color: #fff;
+}
+
+.info.dark.arrow::before {
+  border-color: transparent #333 transparent transparent;
+}

@@ -1,0 +1,26 @@
+[
+  {
+    "date": "2015-2020",
+    "info": {
+      "company": "NIPIneftegas JSC",
+      "job": "Engineer / Geologist",
+      "description": "The job involved analyzing and processing incoming data from the subsoil user and compiling reports based on this data, then, according to the laws of the Republic of Kazakhstan, submitting the data to government authorities. Additionally, the job required negotiations with subsoil users and government authorities. Gained experience in communication and negotiation. And other areas of office work."
+    }
+  },
+  {
+    "date": "2021-2022",
+    "info": {
+      "company": "vprestige.kz",
+      "job": "Web developer",
+      "description": "The job involved improving website functionality, optimization, and creating new pages and blocks. Gained experience with CMS, as well as data analytics and SEO."
+    }
+  },
+  {
+    "date": "2022-2024",
+    "info": {
+      "company": "upkeep.kz / Freelance",
+      "job": "Frontend developer",
+      "description": "The startup was aimed at small and medium-sized businesses, providing them with a platform to create online stores. Gained experience working with React, Redux, and Next.js. As a freelancer, completed several projects for creating websites and online stores."
+    }
+  }
+]

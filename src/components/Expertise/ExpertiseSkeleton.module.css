@@ -1,0 +1,48 @@
+.experience {
+  display: flex;
+  flex-direction: column;
+}
+
+.item {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.item:last-child {
+  margin-bottom: 0;
+}
+
+.leftColumn {
+  flex-basis: 20%;
+  margin-right: 30px;
+}
+
+.rightColumn {
+  flex-basis: 80%;
+}
+
+.skeletonTitle,
+.skeletonText {
+  background: #ddd;
+  border-radius: 4px;
+}
+
+.skeletonTitle {
+  width: 100%;
+  height: 20px;
+  margin-bottom: 10px;
+}
+
+.skeletonText {
+  width: 100%;
+  height: 15px;
+  margin-bottom: 10px;
+}
+
+.skeletonBigText {
+  background: #ddd;
+  border-radius: 4px;
+  width: 100%;
+  height: 60px;
+  margin-bottom: 10px;
+}

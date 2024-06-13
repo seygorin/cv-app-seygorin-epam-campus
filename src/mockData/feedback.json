@@ -1,0 +1,18 @@
+[
+  {
+    "feedback": "An incredibly productive person, he did the work of four people: programmer, SEO specialist, handled online advertising, and even answered phone calls. It was such a pleasure to work with him!",
+    "reporter": {
+      "photoUrl": "/assets/adashyan.jpg",
+      "name": "Marina Adashyan",
+      "citeUrl": "https://www.vprestige.kz"
+    }
+  },
+  {
+    "feedback": "It's a pleasure to work with this guy. He completed all the tasks assigned by the management on time, and most importantly, with high quality. The same applies to freelancing; it's a joy to collaborate with him. If there are deadlines, he always meets them. Punctuality and honesty are his excellent qualities.",
+    "reporter": {
+      "photoUrl": "/assets/logvinov.png",
+      "name": "Georgy Logvinov",
+      "citeUrl": "https://www.upkeep.kz"
+    }
+  }
+]
