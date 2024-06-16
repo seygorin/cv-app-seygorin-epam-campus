@@ -1,10 +1,10 @@
 import Inner from '@/pages/inner'
 import {serverSideTranslations} from 'next-i18next/serverSideTranslations'
-import {GetServerSideProps} from 'next'
+import {GetStaticProps} from 'next'
 export default function Home() {
   return <Inner />
 }
-export const getServerSideProps: GetServerSideProps = async ({
+export const getStaticProps: GetStaticProps = async ({
   locale = 'en',
 }) => ({
   props: {

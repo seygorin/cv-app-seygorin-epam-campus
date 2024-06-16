@@ -23,7 +23,7 @@ import {faChevronUp} from '@fortawesome/free-solid-svg-icons'
 import styles from './home.module.css'
 
 import {serverSideTranslations} from 'next-i18next/serverSideTranslations'
-import {GetServerSideProps} from 'next'
+import {GetStaticProps} from 'next'
 import {useTranslation} from 'next-i18next'
 
 export default function Home() {
@@ -144,7 +144,7 @@ export default function Home() {
   )
 }
 
-export const getServerSideProps: GetServerSideProps = async ({
+export const getStaticProps: GetStaticProps = async ({
   locale = 'en',
 }) => ({
   props: {
