@@ -1,6 +1,6 @@
 .container {
   display: flex;
-	position: relative;
+  position: relative;
 }
 
 .mainContent {
@@ -17,13 +17,22 @@
   bottom: 0px;
   right: 20px;
 
-	padding: 5px;
+  padding: 5px;
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
 }
 
+.error {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 250px;
+  color: rgb(208, 138, 138);
+
+  text-align: center;
+}
+
 @media (max-width: 600px) {
-	
   .panelOpen {
     margin-left: 50px;
   }

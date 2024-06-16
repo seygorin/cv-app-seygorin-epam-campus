@@ -2,25 +2,52 @@
   {
     "date": "2015-2020",
     "info": {
-      "company": "NIPIneftegas JSC",
-      "job": "Engineer / Geologist",
-      "description": "The job involved analyzing and processing incoming data from the subsoil user and compiling reports based on this data, then, according to the laws of the Republic of Kazakhstan, submitting the data to government authorities. Additionally, the job required negotiations with subsoil users and government authorities. Gained experience in communication and negotiation. And other areas of office work."
+      "company": {
+        "en": "NIPIneftegas JSC",
+        "ru": "АО \"НИПИнефтегаз\""
+      },
+      "job": {
+        "en": "Engineer / Geologist",
+        "ru": "Инженер / Геолог"
+      },
+      "description": {
+        "en": "The job involved analyzing and processing incoming data from the subsoil user and compiling reports based on this data, then, according to the laws of the Republic of Kazakhstan, submitting the data to government authorities. Additionally, the job required negotiations with subsoil users and government authorities. Gained experience in communication and negotiation. And other areas of office work.",
+        "ru": "Работа заключалась в анализе и обработке поступающих данных от недропользователя и составлении отчетов на основе этих данных, затем, согласно законодательству Республики Казахстан, предоставлении данных в государственные органы. Дополнительно работа требовала проведения переговоров с недропользователями и гос. органами. Получен опыт в коммуникации и ведении переговоров. И других сферах офисной работы."
+      }
     }
   },
   {
     "date": "2021-2022",
     "info": {
-      "company": "vprestige.kz",
-      "job": "Web developer",
-      "description": "The job involved improving website functionality, optimization, and creating new pages and blocks. Gained experience with CMS, as well as data analytics and SEO."
+      "company": {
+        "en": "vprestige.kz",
+        "ru": "vprestige.kz"
+      },
+      "job": {
+        "en": "Web developer",
+        "ru": "Веб-разработчик"
+      },
+      "description": {
+        "en": "The job involved improving website functionality, optimization, and creating new pages and blocks. Gained experience with CMS, as well as data analytics and SEO.",
+        "ru": "Работа заключалась в улучшении функционала сайта, оптимизации, а также создании новых страниц и блоков. Получен опыт работы с CMS, а также аналитикой данных и SEO."
+      }
     }
   },
   {
     "date": "2022-2024",
     "info": {
-      "company": "upkeep.kz / Freelance",
-      "job": "Frontend developer",
-      "description": "The startup was aimed at small and medium-sized businesses, providing them with a platform to create online stores. Gained experience working with React, Redux, and Next.js. As a freelancer, completed several projects for creating websites and online stores."
+      "company": {
+        "en": "upkeep.kz / Freelance",
+        "ru": "upkeep.kz / Фриланс"
+      },
+      "job": {
+        "en": "Frontend developer",
+        "ru": "Frontend-разработчик"
+      },
+      "description": {
+        "en": "The startup was aimed at small and medium-sized businesses, providing them with a platform to create online stores. Gained experience working with React, Redux, and Next.js. As a freelancer, completed several projects for creating websites and online stores.",
+        "ru": "Стартап был нацелен на малый и средний бизнес, предоставляя им платформу для создания интернет-магазинов. Получен опыт работы с React, Redux и Next.js. В качестве фрилансера выполнил несколько проектов по созданию сайтов и интернет-магазинов."
+      }
     }
   }
 ]

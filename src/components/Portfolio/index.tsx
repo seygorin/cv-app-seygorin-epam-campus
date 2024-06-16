@@ -2,6 +2,7 @@ import React, {useEffect, useRef, useState} from 'react'
 import Image from 'next/image'
 import styles from './Portfolio.module.css'
 import PortfolioInfo from './PortfolioInfo'
+import { useTranslation } from 'next-i18next'
 
 interface PortfolioItem {
   id: number
@@ -122,7 +123,7 @@ const portfolioData: PortfolioItem[] = [
     info: {
       title: 'Romantic (Aktau)',
       text: 'Freelance project that never saw the light of day due to legal issues, I worked on the dashboard',
-      url: '/',
+      url: 'https://github.com/seygorin/RomanticAdminApp',
     },
   },
 ]
@@ -131,6 +132,8 @@ const Portfolio: React.FC = () => {
   const [filter, setFilter] = useState('All')
   const gridRef = useRef<HTMLDivElement>(null)
   const isoRef = useRef<Isotope | null>(null)
+
+	 const { t } = useTranslation('portfolio');
 
   useEffect(() => {
     const initializeIsotope = async () => {

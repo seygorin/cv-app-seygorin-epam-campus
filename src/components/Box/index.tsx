@@ -33,7 +33,7 @@ const Box: React.FC<BoxProps> = ({
         )}
       </h2>
       <div className={styles.content}>{content}</div>
-      <p>{text}</p>
+      {text}
     </div>
   )
 }

@@ -1,6 +1,7 @@
-import {useEffect, useState} from 'react'
+import React, {useEffect, useState} from 'react'
 import {useMediaQuery} from 'react-responsive'
 import Link from 'next/link'
+import {useTranslation} from 'next-i18next'
 import Button from '@/components/Button'
 
 import styles from './Navigation.module.css'
@@ -18,7 +19,8 @@ import {
 const Navigation: React.FC = () => {
   const [isScreenSmall, setIsScreenSmall] = useState(false)
   const isSmall = useMediaQuery({query: '(max-width: 600px)'})
-	
+  const {t} = useTranslation('common')
+
   useEffect(() => {
     setIsScreenSmall(isSmall)
   }, [isSmall])
@@ -31,7 +33,7 @@ const Navigation: React.FC = () => {
             <Button
               icon={faUser}
               className={styles.button}
-              text={isScreenSmall ? '' : 'About me'}
+              text={isScreenSmall ? '' : t('aboutMe')}
             />
           </Link>
         </li>
@@ -40,7 +42,7 @@ const Navigation: React.FC = () => {
             <Button
               icon={faGraduationCap}
               className={styles.button}
-              text={isScreenSmall ? '' : 'Education'}
+              text={isScreenSmall ? '' : t('education')}
             />
           </Link>
         </li>
@@ -49,7 +51,7 @@ const Navigation: React.FC = () => {
             <Button
               icon={faBriefcase}
               className={styles.button}
-              text={isScreenSmall ? '' : 'Experience'}
+              text={isScreenSmall ? '' : t('experience')}
             />
           </Link>
         </li>
@@ -58,7 +60,7 @@ const Navigation: React.FC = () => {
             <Button
               icon={faCogs}
               className={styles.button}
-              text={isScreenSmall ? '' : 'Skills'}
+              text={isScreenSmall ? '' : t('skills')}
             />
           </Link>
         </li>
@@ -67,7 +69,7 @@ const Navigation: React.FC = () => {
             <Button
               icon={faImages}
               className={styles.button}
-              text={isScreenSmall ? '' : 'Portfolio'}
+              text={isScreenSmall ? '' : t('portfolio')}
             />
           </Link>
         </li>
@@ -76,7 +78,7 @@ const Navigation: React.FC = () => {
             <Button
               icon={faEnvelope}
               className={styles.button}
-              text={isScreenSmall ? '' : 'Contacts'}
+              text={isScreenSmall ? '' : t('contacts')}
             />
           </Link>
         </li>
@@ -85,7 +87,7 @@ const Navigation: React.FC = () => {
             <Button
               icon={faComments}
               className={styles.button}
-              text={isScreenSmall ? '' : 'Feedbacks'}
+              text={isScreenSmall ? '' : t('feedbacks')}
             />
           </Link>
         </li>

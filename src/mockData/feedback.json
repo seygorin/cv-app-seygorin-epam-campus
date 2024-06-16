@@ -1,17 +1,29 @@
 [
   {
-    "feedback": "An incredibly productive person, he did the work of four people: programmer, SEO specialist, handled online advertising, and even answered phone calls. It was such a pleasure to work with him!",
+    "feedback": {
+      "en": "An incredibly productive person, he did the work of four people: programmer, SEO specialist, handled online advertising, and even answered phone calls. It was such a pleasure to work with him!",
+      "ru": "Невероятно продуктивный человек, он выполнял работу за четверых: программист, SEO-специалист, занимался интернет-рекламой и даже отвечал на телефонные звонки. Было очень приятно с ним работать!"
+    },
     "reporter": {
       "photoUrl": "/assets/adashyan.jpg",
-      "name": "Marina Adashyan",
+      "name": {
+        "en": "Marina Adashyan",
+        "ru": "Марина Адашьян"
+      },
       "citeUrl": "https://www.vprestige.kz"
     }
   },
   {
-    "feedback": "It's a pleasure to work with this guy. He completed all the tasks assigned by the management on time, and most importantly, with high quality. The same applies to freelancing; it's a joy to collaborate with him. If there are deadlines, he always meets them. Punctuality and honesty are his excellent qualities.",
+    "feedback": {
+      "en": "It's a pleasure to work with this guy. He completed all the tasks assigned by the management on time, and most importantly, with high quality. The same applies to freelancing; it's a joy to collaborate with him. If there are deadlines, he always meets them. Punctuality and honesty are his excellent qualities.",
+      "ru": "С этим парнем приятно работать. Все поставленные руководством задачи он выполнял в срок и, главное, качественно. То же самое касается и фриланса, с ним одно удовольствие сотрудничать. Если есть дедлайны, он их всегда соблюдает. Пунктуальность и честность - это его отличные качества."
+    },
     "reporter": {
       "photoUrl": "/assets/logvinov.png",
-      "name": "Georgy Logvinov",
+      "name": {
+        "en": "Georgy Logvinov",
+        "ru": "Георгий Логинов"
+      },
       "citeUrl": "https://www.upkeep.kz"
     }
   }

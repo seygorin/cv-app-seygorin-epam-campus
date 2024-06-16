@@ -31,6 +31,17 @@ describe('Address', () => {
     expect(emailLinks[0]).toHaveAttribute('href', 'mailto:seygorin@gmail.com')
   })
 
+  test('renders GitHub icon and links', () => {
+    expect(screen.getByText('GitHub')).toBeInTheDocument()
+    expect(screen.getByRole('link', {name: 'GitHub'})).toHaveAttribute(
+      'href',
+      'https://github.com/seygorin'
+    )
+    expect(
+      screen.getByRole('link', {name: 'www.telegram.org'})
+    ).toHaveAttribute('href', 'https://t.me/seygorin')
+  })
+	
   test('renders Telegram icon and links', () => {
     expect(screen.getByText('Telegram')).toBeInTheDocument()
     expect(screen.getByRole('link', {name: 'Telegram'})).toHaveAttribute(

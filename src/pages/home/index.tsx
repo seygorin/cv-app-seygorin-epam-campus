@@ -22,7 +22,12 @@ import Loading from '@/components/Loading'
 import {faChevronUp} from '@fortawesome/free-solid-svg-icons'
 import styles from './home.module.css'
 
+import {serverSideTranslations} from 'next-i18next/serverSideTranslations'
+import {GetServerSideProps} from 'next'
+import {useTranslation} from 'next-i18next'
+
 export default function Home() {
+  const {t} = useTranslation('common')
   const [isPanelOpen, setPanelOpen] = useState(true)
 
   const dispatch: AppDispatch = useDispatch()
@@ -56,6 +61,10 @@ export default function Home() {
     })
   }, [])
 
+  const renderError = () => (
+    <div className={styles.error}>{t('serverError')}</div>
+  )
+
   return (
     <div className={styles.container}>
       <Panel isOpen={isPanelOpen} setIsOpen={setPanelOpen} />
@@ -66,59 +75,18 @@ export default function Home() {
       >
         <Box
           id='about-me'
-          title='About me'
-          text={
-            <>
-              I am <em> age &gt; 30 &amp;&amp; age &lt; 35</em>: solving
-              problems and searching for solutions is what I love. After
-              graduating from university at <em>Math.ceil(22.5)</em> with a
-              degree in geology, I dove headfirst into the profession,
-              navigating the challenging path of developing oil and gas fields
-              and leading several subsoil use projects. These projects concluded
-              with the successful completion of work and final presentations in
-              various ministries in Kazakhstan. Five years flew by with
-              excitement, but at some point, I realized that I was also
-              irresistibly drawn to the virtual world, the world of complex
-              algorithms and limitless possibilities –{' '}
-              <span
-                style={{
-                  background:
-                    'linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet)',
-                  WebkitBackgroundClip: 'text',
-                  color: 'transparent',
-                }}
-              >
-                the world of programming
-              </span>
-              . <br />
-              On my path to acquiring new knowledge, my trusty compass has been
-              courses from{' '}
-              <em>
-                RS School, EPAM, and numerous courses on the Udemy platform
-              </em>
-              . Over years of theoretical training, I have come to understand a
-              simple principle: <strong>practice &gt; theory</strong>. <br />
-              The journey of a novice is thorny, but each success, whether it
-              was developing a calculator or an online store, only fueled my
-              interest. <br />
-              Today, armed with knowledge of programming languages:{' '}
-              <em>HTML, CSS, JS, and React/Redux</em>, I am ready for new
-              challenges. My goal is to become part of a team that does not fear
-              difficult tasks and strives to create truly innovative products.
-              My experience as a geologist has taught me to think
-              systematically, analyze large amounts of information, and find
-              unconventional solutions - qualities that I am confident will be
-              valuable in the IT world.
-            </>
-          }
+          title={t('aboutMe')}
+          text={<div dangerouslySetInnerHTML={{__html: t('aboutMeText')}} />}
         />
 
         <Box
           id='education'
-          title='Education'
+          title={t('education')}
           content={
             educationStatus === 'loading' ? (
               <TimeLineSkeleton />
+            ) : educationStatus === 'failed' ? (
+              renderError()
             ) : (
               <TimeLine data={education} />
             )
@@ -126,10 +94,12 @@ export default function Home() {
         />
         <Box
           id='experience'
-          title='Experience'
+          title={t('experience')}
           content={
             experienceStatus === 'loading' ? (
               <ExpertiseSkeleton />
+            ) : experienceStatus === 'failed' ? (
+              renderError()
             ) : (
               <Expertise data={experience} />
             )
@@ -137,18 +107,28 @@ export default function Home() {
         />
         <Box
           id='skills'
-          title='Skills'
-          content={skillsStatus === 'loading' ? <Loading /> : <Skills />}
+          title={t('skills')}
+          content={
+            skillsStatus === 'loading' ? (
+              <Loading />
+            ) : skillsStatus === 'failed' ? (
+              renderError()
+            ) : (
+              <Skills />
+            )
+          }
         />
-        <Box id='portfolio' title='Portfolio' content={<Portfolio />} />
-        <Box id='contacts' title='Contacts' content={<Address />} />
+        <Box id='portfolio' title={t('portfolio')} content={<Portfolio />} />
+        <Box id='contacts' title={t('contacts')} content={<Address />} />
         <Box
           id='feedbacks'
-          title='Feedback'
-          highlightedTitle='theoretically'
+          title={t('feedbacks')}
+          highlightedTitle={t('theoretically')}
           content={
             feedbackStatus === 'loading' ? (
               <Loading />
+            ) : feedbackStatus === 'failed' ? (
+              renderError()
             ) : (
               <Feedback data={feedback} />
             )
@@ -163,3 +143,11 @@ export default function Home() {
     </div>
   )
 }
+
+export const getServerSideProps: GetServerSideProps = async ({
+  locale = 'en',
+}) => ({
+  props: {
+    ...(await serverSideTranslations(locale, ['common'])),
+  },
+})

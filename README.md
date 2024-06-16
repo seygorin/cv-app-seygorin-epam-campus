@@ -1,8 +1,18 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# CV App
+
+This project is a comprehensive CV (Curriculum Vitae) application built with the modern web development stack including TypeScript, Next.js, CSS Modules, Jest, and Redux-Toolkit. The app allows users to create, edit, and manage their professional resumes efficiently.
+
+## Features
+
+- **TypeScript**: Ensures type safety and enhances code quality.
+- **Next.js**: Provides server-side rendering and static site generation for fast, SEO-friendly web applications.
+- **CSS Modules**: Enables modular and scoped CSS for better styling management.
+- **Jest**: Facilitates testing with a robust and flexible testing framework.
+- **Redux-Toolkit**: Simplifies state management with a set of tools and best practices.
 
 ## Getting Started
 
-First, run the development server:
+To get started with the development server, follow these steps:
 
 ```bash
 npm run dev
@@ -14,23 +24,27 @@ pnpm dev
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Then, open [http://localhost:3000](http://localhost:3000) in your browser to see the app in action.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+You can start editing the application by modifying the `app/page.tsx` file. The page will automatically update as you make changes, thanks to Next.js's hot-reloading feature.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Fonts
+
+This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font, ensuring that the app looks great with high-quality typography.
 
 ## Learn More
 
-To learn more about Next.js, take a look at the following resources:
+To learn more about the technologies used in this project, check out the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- [Next.js Documentation](https://nextjs.org/docs): Learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn): An interactive Next.js tutorial.
+- [TypeScript Documentation](https://www.typescriptlang.org/docs/): Comprehensive guide to TypeScript.
+- [CSS Modules Documentation](https://github.com/css-modules/css-modules): Learn how to use CSS Modules.
+- [Jest Documentation](https://jestjs.io/docs/en/getting-started): Guide to using Jest for testing.
+- [Redux Toolkit Documentation](https://redux-toolkit.js.org/introduction/getting-started): Introduction to Redux Toolkit.
 
 ## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+For more details on deploying Next.js applications, refer to the [Next.js deployment documentation](https://nextjs.org/docs/deployment).

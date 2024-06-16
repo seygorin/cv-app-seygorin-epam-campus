@@ -5,6 +5,7 @@ import {faPhone, faEnvelope} from '@fortawesome/free-solid-svg-icons'
 import {
   faTelegram,
   faLinkedin,
+  faGithub,
 } from '@fortawesome/free-brands-svg-icons'
 
 const Address: React.FC = () => {
@@ -24,6 +25,27 @@ const Address: React.FC = () => {
         <div className={styles.item}>
           <a href='mailto:seygorin@gmail.com' className={styles.bold}>
             seygorin@gmail.com
+          </a>
+        </div>
+      </div>
+
+      <div className={styles.itemContainer}>
+        <FontAwesomeIcon icon={faGithub} className={styles.icon} />
+        <div className={styles.item}>
+          <a
+            href='https://github.com/seygorin'
+            target='_blank'
+            rel='noopener noreferrer'
+            className={styles.bold}
+          >
+            GitHub
+          </a>
+          <a
+            href='https://github.com/seygorin'
+            target='_blank'
+            rel='noopener noreferrer'
+          >
+            www.github.com
           </a>
         </div>
       </div>
