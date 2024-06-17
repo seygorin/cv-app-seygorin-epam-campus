@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "jsx": "react-jsx", // react-jsx
+    "jsx": "preserve", // react-jsx
     "target": "ES5",
     "lib": [
       "dom",
