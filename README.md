@@ -28,6 +28,10 @@ Then, open [http://localhost:3000](http://localhost:3000) in your browser to see
 
 You can start editing the application by modifying the `app/page.tsx` file. The page will automatically update as you make changes, thanks to Next.js's hot-reloading feature.
 
+## Adding Personal Data
+
+To add your personal data, you need to replace the JSON data (the first two lines) from the `public/locales/en-ru/common.json` folder with your own data. Additionally, replace all data from the `mockData` folder with your personal information in the JSON files.
+
 ## Fonts
 
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font, ensuring that the app looks great with high-quality typography.

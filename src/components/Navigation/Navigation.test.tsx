@@ -1,7 +1,7 @@
 import {render, screen} from '@testing-library/react'
 import {useMediaQuery} from 'react-responsive'
 import Navigation from './index'
-import {useTranslation} from 'next-i18next'
+
 
 jest.mock('react-responsive', () => ({
   useMediaQuery: jest.fn(),
