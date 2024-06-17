@@ -1,0 +1,211 @@
+[
+	{
+		 "id": 1,
+		 "category": {
+				"en": "Apps",
+				"ru": "Приложения"
+		 },
+		 "imageUrl": "/assets/jobs/app-desktop-app.png",
+		 "info": {
+				"title": {
+					 "en": "Momentum App",
+					 "ru": "Приложение Momentum"
+				},
+				"text": {
+					 "en": "Momentum - an analog of the same-named Chrome web store application. The app shows the time and the user's name, music, weather by location",
+					 "ru": "Momentum - аналог одноименного приложения из веб-магазина Chrome. Приложение показывает время и имя пользователя, музыку, погоду по местоположению"
+				},
+				"url": "https://seygorin-stage0-momentum.netlify.app/"
+		 }
+	},
+	{
+		 "id": 1.1,
+		 "category": {
+				"en": "Apps",
+				"ru": "Приложения"
+		 },
+		 "imageUrl": "/assets/jobs/app-react-app.png",
+		 "info": {
+				"title": {
+					 "en": "CRUD Gallery App",
+					 "ru": "Приложение CRUD Gallery"
+				},
+				"text": {
+					 "en": "First attempt to use React as a library for creating web applications, tried different approaches, worked with API",
+					 "ru": "Первая попытка использовать React в качестве библиотеки для создания веб-приложений, пробовал разные подходы, работал с API"
+				},
+				"url": "https://seygorin-gallery.netlify.app/"
+		 }
+	},
+	{
+		 "id": 1.2,
+		 "category": {
+				"en": "Apps",
+				"ru": "Приложения"
+		 },
+		 "imageUrl": "/assets/jobs/app-simple-vue-app.png",
+		 "info": {
+				"title": {
+					 "en": "Vue Online Shop",
+					 "ru": "Интернет-магазин на Vue"
+				},
+				"text": {
+					 "en": "A simple online shop application built with Vue using a public API: filtering products by category, search, cart, favorites",
+					 "ru": "Простое приложение интернет-магазина, построенное на Vue с использованием публичного API: фильтрация продуктов по категории, поиск, корзина, избранное"
+				},
+				"url": "https://seygorin-vue-online-shop-mediana.netlify.app/"
+		 }
+	},
+	{
+		 "id": 2,
+		 "category": {
+				"en": "Games",
+				"ru": "Игры"
+		 },
+		 "imageUrl": "/assets/jobs/games-calculator.png",
+		 "info": {
+				"title": {
+					 "en": "Calculator",
+					 "ru": "Калькулятор"
+				},
+				"text": {
+					 "en": "The basics, without which you cannot become a true programmer, a calculator made with pure JS, without using libraries and frameworks",
+					 "ru": "Основы, без которых нельзя стать настоящим программистом, калькулятор, сделанный на чистом JS, без использования библиотек и фреймворков"
+				},
+				"url": "https://seygorin.github.io/calculator/"
+		 }
+	},
+	{
+		 "id": 2.1,
+		 "category": {
+				"en": "Games",
+				"ru": "Игры"
+		 },
+		 "imageUrl": "/assets/jobs/games-selectors.png",
+		 "info": {
+				"title": {
+					 "en": "Selectors CSS",
+					 "ru": "CSS Селекторы"
+				},
+				"text": {
+					 "en": "A CSS trainer - an application similar to CSS Diner, with similar functionality but very poor design and colors",
+					 "ru": "Тренажер CSS - приложение, похожее на CSS Diner, с аналогичным функционалом, но очень плохим дизайном и цветами"
+				},
+				"url": "https://rolling-scopes-school.github.io/seygorin-JSFE2023Q1/rs-css/"
+		 }
+	},
+	{
+		 "id": 2.2,
+		 "category": {
+				"en": "Games",
+				"ru": "Игры"
+		 },
+		 "imageUrl": "/assets/jobs/games-minesweeper.png",
+		 "info": {
+				"title": {
+					 "en": "Minesweeper",
+					 "ru": "Сапер"
+				},
+				"text": {
+					 "en": "Classic game — Minesweeper. With fun sounds, game history, a timer, and a mine counter",
+					 "ru": "Классическая игра — Сапер. С веселыми звуками, историей игр, таймером и счетчиком мин"
+				},
+				"url": "https://rolling-scopes-school.github.io/seygorin-JSFE2023Q1/minesweeper/"
+		 }
+	},
+	{
+		 "id": 3,
+		 "category": {
+				"en": "Landings",
+				"ru": "Лэндинги"
+		 },
+		 "imageUrl": "/assets/jobs/landings-frontend-way.png",
+		 "info": {
+				"title": {
+					 "en": "Frontend Way",
+					 "ru": "Frontend Way"
+				},
+				"text": {
+					 "en": "The very first experience in layout, a lot of boilerplate, but overall, not bad. Looks good only for desktops",
+					 "ru": "Первый опыт в верстке, много шаблонного кода, но в целом неплохо. Хорошо смотрится только на десктопах"
+				},
+				"url": "https://seygorin.github.io/fe-way.html"
+		 }
+	},
+	{
+		 "id": 3.1,
+		 "category": {
+				"en": "Landings",
+				"ru": "Лэндинги"
+		 },
+		 "imageUrl": "/assets/jobs/landings-plants.png",
+		 "info": {
+				"title": {
+					 "en": "Plants",
+					 "ru": "Растения"
+				},
+				"text": {
+					 "en": "A simple landing page with pure JS/CSS, animations, and almost responsive layout",
+					 "ru": "Простой лэндинг на чистом JS/CSS, анимации и почти адаптивная верстка"
+				},
+				"url": "https://rolling-scopes-school.github.io/seygorin-JSFEPRESCHOOL2022Q4/plants/"
+		 }
+	},
+	{
+		 "id": 3.2,
+		 "category": {
+				"en": "Landings",
+				"ru": "Лэндинги"
+		 },
+		 "imageUrl": "/assets/jobs/landings-pet-store.png",
+		 "info": {
+				"title": {
+					 "en": "Pet Store",
+					 "ru": "Зоомагазин"
+				},
+				"text": {
+					 "en": "A more complex landing page with dropdown windows, animations, responsive layout, and pagination. Pure JS/CSS",
+					 "ru": "Более сложный лэндинг с выпадающими окнами, анимациями, адаптивной версткой и пагинацией. Чистый JS/CSS"
+				},
+				"url": "https://rolling-scopes-school.github.io/seygorin-JSFE2023Q1/shelter/"
+		 }
+	},
+	{
+		 "id": 4,
+		 "category": {
+				"en": "Jobs",
+				"ru": "Работы"
+		 },
+		 "imageUrl": "/assets/jobs/jobs-upkeep.png",
+		 "info": {
+				"title": {
+					 "en": "upkeep.kz",
+					 "ru": "upkeep.kz"
+				},
+				"text": {
+					 "en": "Almost first job on a real project, I worked on the dashboard: added new functionality, rewrote old components etc.",
+					 "ru": "Почти первая работа над реальным проектом, работал над панелью управления: добавлял новый функционал, переписывал старые компоненты и т.д."
+				},
+				"url": "https://app.upkeep.kz/"
+		 }
+	},
+	{
+		 "id": 4.1,
+		 "category": {
+				"en": "Jobs",
+				"ru": "Работы"
+		 },
+		 "imageUrl": "/assets/jobs/jobs - romantic.jpeg",
+		 "info": {
+				"title": {
+					 "en": "Romantic (Aktau)",
+					 "ru": "Romantic (Актау)"
+				},
+				"text": {
+					 "en": "Freelance project that never saw the light of day due to legal issues, I worked on the dashboard",
+					 "ru": "Фриланс проект, который так и не увидел свет из-за юридических проблем, я работал над панелью управления"
+				},
+				"url": "https://github.com/seygorin/RomanticAdminApp"
+		 }
+	}
+]

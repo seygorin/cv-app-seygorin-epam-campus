@@ -1,25 +1,24 @@
 import {NextApiRequest, NextApiResponse} from 'next'
 import fs from 'fs'
 import path from 'path'
-import {ExperienceItem} from '../../store/experienceSlice'
 
-const experienceDataPath = path.resolve(
+const portfolioDataPath = path.resolve(
   process.cwd(),
   'src',
   'mockData',
-  'experience.json'
+  'portfolio.json'
 )
 
-const readExperience = (): ExperienceItem[] => {
-  const jsonData = fs.readFileSync(experienceDataPath, 'utf-8')
+const readPortfolioData = () => {
+  const jsonData = fs.readFileSync(portfolioDataPath, 'utf-8')
   return JSON.parse(jsonData)
 }
 
 export default function handler(req: NextApiRequest, res: NextApiResponse) {
   switch (req.method) {
     case 'GET':
-      const experience = readExperience()
-      res.status(200).json(experience)
+      const portfolioData = readPortfolioData()
+      res.status(200).json(portfolioData)
       break
     default:
       res.setHeader('Allow', ['GET'])

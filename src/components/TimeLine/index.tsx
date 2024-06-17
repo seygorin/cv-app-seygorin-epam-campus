@@ -3,10 +3,11 @@ import styles from './TimeLine.module.css'
 import Info from '@/components/Info'
 import {useTranslation} from 'next-i18next'
 
+type Language = 'en' | 'ru'
 export interface TimeLineData {
   date: number
-  title: string
-  text: string
+  title: Record<Language, string>
+  text: Record<Language, string>
 }
 
 interface TimeLineProps {
@@ -27,14 +28,8 @@ const TimeLine: React.FC<TimeLineProps> = ({data}) => {
           <div className={styles.date}>{item.date}</div>
           <div className={styles.content}>
             <Info arrow>
-              <h4>
-                {typeof item.title === 'object'
-                  ? item.title[i18n.language]
-                  : item.title}
-              </h4>
-              <p> {typeof item.text === 'object'
-                  ? item.text[i18n.language]
-                  : item.text}</p>
+              <h4>{item.title[i18n.language as Language]}</h4>
+              <p>{item.text[i18n.language as Language]}</p>
             </Info>
           </div>
         </div>

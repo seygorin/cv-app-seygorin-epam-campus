@@ -5,6 +5,7 @@ import {fetchEducation} from '@/store/educationSlice'
 import {fetchFeedback} from '@/store/feedbackSlice'
 import {fetchExperience} from '@/store/experienceSlice'
 import {fetchSkills} from '@/store/skillsSlice'
+import {fetchPortfolio} from '@/store/portfolioSlice'
 
 import Box from '@/components/Box'
 import Expertise from '@/components/Expertise'
@@ -31,6 +32,7 @@ export default function Home() {
   const [isPanelOpen, setPanelOpen] = useState(true)
 
   const dispatch: AppDispatch = useDispatch()
+
   const education = useSelector((state: RootState) => state.education.data)
   const educationStatus = useSelector(
     (state: RootState) => state.education.status
@@ -46,6 +48,11 @@ export default function Home() {
     (state: RootState) => state.experience.status
   )
 
+  const portfolio = useSelector((state: RootState) => state.portfolio.data)
+  const portfolioStatus = useSelector(
+    (state: RootState) => state.portfolio.status
+  )
+
   const skillsStatus = useSelector((state: RootState) => state.skills.status)
 
   useEffect(() => {
@@ -53,6 +60,7 @@ export default function Home() {
     dispatch(fetchFeedback())
     dispatch(fetchExperience())
     dispatch(fetchSkills())
+    dispatch(fetchPortfolio())
   }, [dispatch])
 
   const scrollToTop = useCallback(() => {
@@ -118,7 +126,19 @@ export default function Home() {
             )
           }
         />
-        <Box id='portfolio' title={t('portfolio')} content={<Portfolio />} />
+        <Box
+          id='portfolio'
+          title={t('portfolio')}
+          content={
+            portfolioStatus === 'loading' ? (
+              <Loading />
+            ) : experienceStatus === 'failed' ? (
+              renderError()
+            ) : (
+              <Portfolio data={portfolio} />
+            )
+          }
+        />
         <Box id='contacts' title={t('contacts')} content={<Address />} />
         <Box
           id='feedbacks'
@@ -144,9 +164,7 @@ export default function Home() {
   )
 }
 
-export const getStaticProps: GetStaticProps = async ({
-  locale = 'en',
-}) => ({
+export const getStaticProps: GetStaticProps = async ({locale = 'en'}) => ({
   props: {
     ...(await serverSideTranslations(locale, ['common'])),
   },

@@ -1,17 +1,11 @@
 import React from 'react'
 import {useTranslation} from 'react-i18next'
+import {ExperienceItem} from '@/store/experienceSlice'
 import styles from './Expertise.module.css'
 
-export interface ExperienceData {
-  date: string
-  info: {
-    company: string
-    job: string
-    description: string
-  }
-}
+type Language = 'en' | 'ru'
 interface ExpertiseProps {
-  data: ExperienceData[]
+  data: ExperienceItem[]
 }
 
 const Expertise: React.FC<ExpertiseProps> = ({data}) => {
@@ -22,24 +16,12 @@ const Expertise: React.FC<ExpertiseProps> = ({data}) => {
       {data.map((item, index) => (
         <div key={index} className={styles.item}>
           <div className={styles.leftColumn}>
-            <h3>
-              {typeof item.info.company === 'object'
-                ? item.info.company[i18n.language]
-                : item.info.company}
-            </h3>
+            <h3>{item.info.company[i18n.language as Language]}</h3>
             <p>{item.date}</p>
           </div>
           <div className={styles.rightColumn}>
-            <h3>
-              {typeof item.info.job === 'object'
-                ? item.info.job[i18n.language]
-                : item.info.job}
-            </h3>
-            <p>
-              {typeof item.info.description === 'object'
-                ? item.info.description[i18n.language]
-                : item.info.description}
-            </p>
+            <h3>{item.info.job[i18n.language as Language]}</h3>
+            <p>{item.info.description[i18n.language as Language]}</p>
           </div>
         </div>
       ))}

@@ -1,14 +1,14 @@
 import {createSlice, createAsyncThunk} from '@reduxjs/toolkit'
 
- interface ExperienceInfo {
-  company: string
-  job: string
-  description: string
-}
+type Language = 'en' | 'ru'
 
-interface ExperienceItem {
+export interface ExperienceItem {
   date: string
-  info: ExperienceInfo
+  info: {
+    company: Record<Language, string>
+    job: Record<Language, string>
+    description: Record<Language, string>
+  }
 }
 
 export interface ExperienceState {
@@ -20,14 +20,13 @@ const initialState: ExperienceState = {
   data: [],
   status: 'idle',
 }
-
 export const fetchExperience = createAsyncThunk(
   'experience/fetchExperience',
   async () => {
     await new Promise((resolve) => setTimeout(resolve, 3000))
 
     const response = await fetch('/api/experience')
-    const data = await response.json()
+    const data: ExperienceItem[] = await response.json()
     return data
   }
 )
