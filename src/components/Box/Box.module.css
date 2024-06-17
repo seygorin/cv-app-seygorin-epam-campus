@@ -24,3 +24,9 @@
 .highlightedTitle::selection {
   color: #049ce4;
 }
+
+@media (max-width: 600px) {
+  .box {
+    padding: 0 10px ;
+  }
+}

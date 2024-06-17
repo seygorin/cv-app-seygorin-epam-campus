@@ -9,15 +9,23 @@
 }
 
 .item:last-child {
-	margin-bottom: 0;
+  margin-bottom: 0;
 }
 .leftColumn {
-	
-  flex-basis: 20%; 
-	margin-right: 30px;
+  flex-basis: 20%;
+  margin-right: 30px;
 }
 
-
 .rightColumn {
-  flex-basis: 80% 
+  flex-basis: 80%;
+}
+
+@media (max-width: 600px) {
+	.item {
+		flex-direction: column;
+	}
+	.leftColumn {
+
+		margin-bottom: 10px;
+	}
 }
