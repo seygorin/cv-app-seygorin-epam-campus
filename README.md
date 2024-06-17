@@ -30,7 +30,7 @@ You can start editing the application by modifying the `app/page.tsx` file. The 
 
 ## Adding Personal Data
 
-To add your personal data, you need to replace the JSON data (the first two lines) from the `public/locales/en-ru/common.json` folder with your own data. Additionally, replace all data from the `mockData` folder with your personal information in the JSON files.
+To add your personal data, you need to replace the JSON data (the first two lines) from the `public/locales/en-ru/common.json` folder with your own data. Additionally, replace all data from the `src/mockData` folder with your personal information in the JSON files.
 
 ## Fonts
 
