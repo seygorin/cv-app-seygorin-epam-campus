@@ -20,6 +20,7 @@
     "formik": "^2.4.6",
     "i18next": "^23.11.5",
     "isotope-layout": "^3.0.6",
+    "mongoose": "^8.4.3",
     "next": "^14.2.2",
     "next-i18next": "^15.3.0",
     "next-themes": "^0.3.0",

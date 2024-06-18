@@ -61,6 +61,7 @@ const Panel: React.FC<PanelProps> = ({isOpen, setIsOpen}) => {
 
   const toggleTheme = () => {
     setTheme(theme === 'light' ? 'dark' : 'light')
+    setIsSettingsOpen(false)
   }
 
   const goBack = () => {
@@ -71,6 +72,7 @@ const Panel: React.FC<PanelProps> = ({isOpen, setIsOpen}) => {
     const nextLocale = i18n.language === 'en' ? 'ru' : 'en'
     await i18n.changeLanguage(nextLocale)
     router.push(router.pathname, router.asPath, {locale: nextLocale})
+    setIsSettingsOpen(false)
   }
 
   const toggleSettings = () => {
@@ -94,7 +96,7 @@ const Panel: React.FC<PanelProps> = ({isOpen, setIsOpen}) => {
         }`}
       >
         <Button
-          icon={faLanguage}
+          text={i18n.language === 'en' ? '🇺🇸' : '🇰🇿'}
           onClick={switchLanguage}
           className={styles.button}
         />

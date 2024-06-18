@@ -9,6 +9,7 @@ This project is a comprehensive CV (Curriculum Vitae) application built with the
 - **CSS Modules**: Enables modular and scoped CSS for better styling management.
 - **Jest**: Facilitates testing with a robust and flexible testing framework.
 - **Redux-Toolkit**: Simplifies state management with a set of tools and best practices.
+- **MongoDB Integration**: Currently, the skills component works with MongoDB, allowing any user on the internet to add, delete, and edit skills data. However, you can change this logic by renaming `src/pages/api/skillsLocal.ts` to `skills.ts`, replacing the previous file.
 
 ## Getting Started
 
@@ -30,7 +31,7 @@ You can start editing the application by modifying the `app/page.tsx` file. The 
 
 ## Adding Personal Data
 
-To add your personal data, you need to replace the JSON data (the first two lines) from the `public/locales/en-ru/common.json` folder with your own data. Additionally, replace all data from the `src/mockData` folder with your personal information in the JSON files.
+To add your personal data, you need to replace the JSON data (the first four lines) from the `public/locales/en-ru/common.json` folder with your own data. Additionally, replace all data from the `src/mockData` folder with your personal information in the JSON files.
 
 ## Fonts
 
